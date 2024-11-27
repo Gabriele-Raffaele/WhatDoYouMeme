@@ -1,0 +1,190 @@
+ html, body {
+  height: 100%;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  overflow: auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 0;
+}
+
+.carousel-container {
+
+  width: 100%; /* Larghezza 100% della viewport */
+  height: 100%; /* Altezza 100% della viewport */
+}
+
+
+
+.login-form-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Sfondo semi-trasparente */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+.custom-bg-color {
+  background-color: #6157ff !important; /* Sostituisci con il tuo colore esadecimale */
+  border: 1px solid   #6157ff !important; /* Aggiungi un bordo di 1px solido con il colore #6157ff */
+
+}
+
+.custom-bg-button {
+  background-color: #6157ff !important; /* Sostituisci con il tuo colore esadecimale */
+  border: 1px solid   #6157ff !important; /* Aggiungi un bordo di 1px solido con il colore #6157ff */
+
+}
+.custom-bg-button-logout {
+  background-color: #333336 !important; /* Sostituisci con il tuo colore esadecimale */
+  border: 1px solid   #000000 !important; /* Aggiungi un bordo di 1px solido con il colore #6157ff */
+}
+.custom-bg-button-logout:hover {
+  background-color: #000000 !important; /* Sostituisci con il tuo colore esadecimale */
+  border: 1px solid   #000000 !important; /* Aggiungi un bordo di 1px solido con il colore #6157ff */
+  color: #ffffff !important; /* Cambia il colore del testo */
+}
+.custom-bg-button:hover {
+  background-color: #e3e3e8 !important; /* Sostituisci con il tuo colore esadecimale */
+  border: 2px solid  #6157ff !important; /* Aggiungi un bordo di 1px solido con il colore #6157ff */
+  color: #6157ff !important; /* Cambia il colore del testo */
+
+}
+.custom-bg-termina{
+  background-color: #ff0000 !important;/* Sostituisci con il tuo colore esadecimale */
+  border: 1px solid  #ff0000 !important; /* Aggiungi un bordo di 1px solido con il colore #6157ff */
+
+}
+
+/*schemata profilo*/
+#game-list {
+  height: 100vh; /* Imposta l'altezza del contenitore al 100% dell'altezza della finestra */
+  overflow-y: auto; /* Aggiunge lo scrolling verticale se necessario */
+  z-index: 0;
+}
+
+/* Stile per il bottone nav-link quando attivo */
+.nav-link.active {
+  background-color: #6157ff !important; /* Cambia il colore di sfondo */
+  color: rgb(255, 255, 255) !important; /* Cambia il colore del testo */
+}
+
+/* Stile per il bottone nav-link */
+.nav-link {
+  color:  #000000 !important; /* Colore del testo non attivo */
+}
+
+/* Stile per il bottone nav-link al passaggio del mouse */
+.nav-link:hover {
+  border: 1px solid #6157ff !important; /* Aggiungi un bordo di 1px solido con il colore #6157ff */
+  color: #1a1a1b !important; /* Cambia il colore del testo */
+z-index: 1;;
+}
+
+
+/*profilo utente*/
+.profile-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+/*
+.profile-layout-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  padding: 20px; 
+}
+
+.profile-card {
+  width: 100%;
+  max-width: 500px; 
+}
+*/
+/*link navbar*/
+
+.disabled {
+  pointer-events: none;
+}
+
+
+
+/*carousell start*/
+/* CSS per centrare il carosello verticalmente */
+.carousel-outer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altezza del viewport per centrare verticalmente */
+  left:0;
+  right:0 ;
+  width: 100% !important;
+}
+
+.carousel-outer-container {
+  width: 100%!important;
+  display: flex;
+  justify-content: center;
+  left:0;
+  right:0;
+  width: 100%;
+  margin: 0;
+}
+
+.carousel-container {
+  width: 100% !important;
+  overflow: hidden;
+  position: relative;
+z-index:1;
+
+}
+
+.image-carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+
+}
+
+.carousel-images-wrapper {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-image {
+  max-width: 40%; /* Regola la percentuale in base al numero di immagini che desideri mostrare */
+  height: auto;
+  object-fit: cover;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+} 
+
+
+.centered-button-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10; /* Sopraelevato rispetto alle immagini */
+}
+.centered-button {
+  background-color: #6157ff !important; /* Sostituisci con il tuo colore esadecimale */
+  border: 1px solid   #6157ff !important; /* Aggiungi un bordo di 1px solido con il colore #6157ff */
+
+}
+
+.centered-button:hover {
+  background-color: #e3e3e8 !important; /* Sostituisci con il tuo colore esadecimale */
+  border: 2px solid  #6157ff !important; /* Aggiungi un bordo di 1px solido con il colore #6157ff */
+  color: #6157ff !important; /* Cambia il colore del testo */
+
+}
